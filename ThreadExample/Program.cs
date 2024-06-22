@@ -18,6 +18,7 @@ void PrintName()
         Console.Write("_Start_T_P_", Thread.CurrentThread.Name,"_End");
     }
 }
+
 newThreadForPrintingName.Join();
 
 Thread t = new Thread(Go);
